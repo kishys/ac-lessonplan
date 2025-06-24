@@ -375,14 +375,15 @@ const lessonPlans = [
 
 const categories = [
   "All",
-  "Drill",
-  "Aviation",
-  "Dress",
-  "Leadership",
-  "Survival",
   "Cadet Knowledge",
+  "Citizenship",
+  "Leadership",
+  "Aerospace",
+  "Aviation",
+  "Instructional Techniques",
+  "Drill",
   "Physical Fitness",
-  "Instructing",
+  "Community Service",
 ]
 const levels = ["All", "Level 1", "Level 2", "Level 3", "Level 4"]
 const instructionTypes = ["All", "EOM", "EOC"]
