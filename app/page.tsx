@@ -440,15 +440,13 @@ export default function LessonPlanDistribution() {
   }, [searchQuery, selectedCategory, selectedLevel, selectedInstructionType, fuse])
 
   const handleDownload = (plan: (typeof lessonPlans)[0]) => {
-    // In a real app, this would trigger the actual file download
-    // For demo purposes, we'll just show an alert
-    alert(`Downloading: ${plan.name} (${plan.fileType})`)
-
-    // You would implement actual download logic here:
-    // const link = document.createElement('a')
-    // link.href = plan.fileUrl
-    // link.download = plan.name
-    // link.click()
+    // Immediately trigger file download
+    const link = document.createElement("a")
+    link.href = plan.fileUrl
+    link.download = plan.name
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
   const formatDate = (dateString: string) => {
@@ -606,7 +604,18 @@ export default function LessonPlanDistribution() {
                       </Badge>
                     </div>
 
-                    <Button onClick={() => alert("Downloading: Lesson Plan Template")} className="w-full" size="sm">
+                    <Button
+                      onClick={() => {
+                        const link = document.createElement("a")
+                        link.href = "/files/lesson-plan-template.pdf"
+                        link.download = "Lesson Plan Template.pdf"
+                        document.body.appendChild(link)
+                        link.click()
+                        document.body.removeChild(link)
+                      }}
+                      className="w-full"
+                      size="sm"
+                    >
                       <Download className="w-3 h-3 mr-1" />
                       Download
                     </Button>
@@ -634,7 +643,18 @@ export default function LessonPlanDistribution() {
                       </Badge>
                     </div>
 
-                    <Button onClick={() => alert("Downloading: Assessment Template")} className="w-full" size="sm">
+                    <Button
+                      onClick={() => {
+                        const link = document.createElement("a")
+                        link.href = "/files/assessment-template.pdf"
+                        link.download = "Assessment Template.pdf"
+                        document.body.appendChild(link)
+                        link.click()
+                        document.body.removeChild(link)
+                      }}
+                      className="w-full"
+                      size="sm"
+                    >
                       <Download className="w-3 h-3 mr-1" />
                       Download
                     </Button>
