@@ -504,8 +504,8 @@ export default function LessonPlanDistribution() {
                   <Plane className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h1 className="text-2xl font-bold text-foreground">Air Cadet Resources</h1>
-                  <p className="text-sm text-muted-foreground">Lesson Plan Distribution Center</p>
+                  <h1 className="text-2xl font-bold text-foreground">Air Cadet Instructional Guide Distributor</h1>
+                  <p className="text-sm text-muted-foreground">800 Black Forest Squadron</p>
                 </div>
               </div>
             </div>
