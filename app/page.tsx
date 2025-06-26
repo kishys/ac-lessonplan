@@ -725,8 +725,8 @@ export default function LessonPlanDistribution() {
         <footer className="border-t bg-card mt-16">
           <div className="container mx-auto px-4 py-8">
             <div className="text-center text-sm text-muted-foreground">
-              <p>&copy; 2024 Air Cadet Resources. All rights reserved.</p>
-              <p className="mt-2">For support or to submit new lesson plans, contact your unit administrator.</p>
+              <p>&copy; 2024 Air Cadet IG Distributor. All rights reserved.</p>
+              <p className="mt-2">For support or to submit new lesson plans, contact: ksuhirthan113@cdt.cadets.gc.ca.</p>
             </div>
           </div>
         </footer>
